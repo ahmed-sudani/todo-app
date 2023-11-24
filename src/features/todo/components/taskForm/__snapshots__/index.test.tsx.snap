@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TaskForm > should render successfully 1`] = `
+<div>
+  <form
+    class="flex mt-5"
+  >
+    <input
+      class="input rounded-r-none flex-grow"
+      data-testid="feature-todo-create-task-input"
+      pattern="([^\\\\s]\\\\s?)+"
+      placeholder="Enter a task"
+      required=""
+      type="text"
+    />
+    <button
+      class="btn btn-rounded btn-primary rounded-l-none"
+      data-testid="feature-todo-create-task-btn"
+      type="submit"
+    >
+      Create Task
+    </button>
+  </form>
+</div>
+`;
