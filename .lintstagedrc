@@ -1,0 +1,4 @@
+{
+  "*.{ts,tsx}": ["yarn lint:check", "yarn prettier:write", "yarn test"],
+  "*.{html,css,js,json,md}": "yarn prettier:write"
+}
