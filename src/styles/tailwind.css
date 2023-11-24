@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    color: theme('colors.white');
+    font-size: theme('fontSize.xs');
+    line-height: theme('lineHeight.4');
+    padding: theme('padding[1.5]') theme('padding.3');
+    text-transform: capitalize;
+  }
+
+  .btn-danger {
+    background-color: theme('colors.red.700');
+  }
+
+  .btn-danger:hover {
+    background-color: theme('colors.red.800');
+  }
+
+  .btn-primary {
+    background-color: theme('colors.blue.600');
+  }
+
+  .btn-primary:hover {
+    background-color: theme('colors.blue.700');
+  }
+
+  .btn-rounded {
+    border-radius: theme('borderRadius.full');
+  }
+
+  .btn-secondary {
+    background-color: 'inherit';
+    border-width: theme('borderWidth.DEFAULT');
+    color: theme('colors.black');
+  }
+
+  .btn-secondary:hover {
+    background-color: theme('colors.green.200');
+  }
+
+  .btn-yellow {
+    background-color: theme('colors.yellow.200');
+    color: theme('colors.black');
+    border: none;
+  }
+
+  .btn-yellow:hover {
+    background-color: theme('colors.yellow.300');
+  }
+
+  .input {
+    background-color: theme('colors.gray.50');
+    border-color: theme('colors.gray.300');
+    border-radius: theme('borderRadius.lg');
+    border-width: theme('borderWidth.DEFAULT');
+    color: theme('colors.gray.900');
+    font-size: theme('fontSize.xs');
+    line-height: theme('lineHeight.4');
+    padding: theme('padding.2');
+  }
+
+  .active {
+    background-color: theme('colors.green.200');
+    border: none;
+  }
+
+  .task-status {
+    border-radius: theme('borderRadius.full');
+    width: theme('width[2.5]');
+    height: theme('height[2.5]');
+  }
+
+  .task-status-completed {
+    background-color: theme('colors.green.500');
+  }
+
+  .task-status-uncompleted {
+    background-color: theme('colors.red.500');
+  }
+
+  @screen sm {
+    .btn {
+      padding: theme('padding.2') theme('padding.4');
+      font-size: theme('fontSize.sm');
+    }
+    .input {
+      font-size: theme('fontSize.sm');
+      padding: theme('padding.3');
+    }
+  }
+}
+
+@layer base {
+  thead {
+    font-size: theme('fontSize.xs');
+    text-transform: uppercase;
+    background-color: theme('colors.gray.50');
+    color: theme('colors.gray.700');
+    text-align: center;
+  }
+
+  td {
+    font-size: theme('fontSize.xs');
+    padding: theme('padding.2');
+    text-align: center;
+  }
+
+  th {
+    font-size: theme('fontSize.xs');
+    padding: theme('padding.3') theme('padding.2');
+  }
+
+  tr:hover {
+    background-color: theme('colors.gray.50');
+  }
+
+  @screen sm {
+    td {
+      font-size: theme('fontSize.sm');
+    }
+
+    th {
+      font-size: theme('fontSize.sm');
+    }
+
+    thead {
+      font-size: theme('fontSize.sm');
+    }
+  }
+}
