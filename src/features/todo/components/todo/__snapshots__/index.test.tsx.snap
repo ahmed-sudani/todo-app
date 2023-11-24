@@ -1,0 +1,133 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Todo > should render successfully 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-4 mx-2 sm:mx-auto mt-5 max-w-4xl p-2 sm:p-6 border border-gray-200 rounded-lg shadow"
+  >
+    <h1
+      class="text-center text-xl font-semibold text-gray-700"
+      data-testid="header"
+    >
+      Todo App
+    </h1>
+    <form
+      class="flex mt-5"
+    >
+      <input
+        class="input rounded-r-none flex-grow"
+        data-testid="feature-todo-create-task-input"
+        pattern="([^\\\\s]\\\\s?)+"
+        placeholder="Enter a task"
+        required=""
+        type="text"
+      />
+      <button
+        class="btn btn-rounded btn-primary rounded-l-none"
+        data-testid="feature-todo-create-task-btn"
+        type="submit"
+      >
+        Create Task
+      </button>
+    </form>
+    <div
+      class="flex items-center gap-5 flex-wrap"
+    >
+      <div
+        class="relative"
+      >
+        <label
+          class="absolute inset-y-0 left-0 flex items-center pl-3"
+          for="search"
+        >
+          <img
+            class="w-4 h-4 text-gray-500 dark:text-gray-400"
+            src="/icons/search.svg"
+          />
+        </label>
+        <input
+          class="input pl-10"
+          data-testid="feature-todo-filter-tasks-input"
+          id="search"
+          placeholder="Search for a task"
+          type="text"
+        />
+      </div>
+      <div
+        class="flex gap-1"
+      >
+        <button
+          class="btn btn-rounded btn-secondary active"
+          data-testid="feature-todo-tasks-filter-btn-all"
+        >
+          0 all
+        </button>
+        <button
+          class="btn btn-rounded btn-secondary"
+          data-testid="feature-todo-tasks-filter-btn-completed"
+        >
+          0 completed
+        </button>
+        <button
+          class="btn btn-rounded btn-secondary"
+          data-testid="feature-todo-tasks-filter-btn-uncompleted"
+        >
+          0 uncompleted
+        </button>
+      </div>
+    </div>
+    <div
+      class="flex gap-1 sm:justify-end justify-start items-center"
+    >
+      <button
+        class="btn btn-rounded btn-primary"
+      >
+        Complete All Tasks
+      </button>
+      <button
+        class="btn btn-rounded btn-danger"
+      >
+        Delete Completed Tasks
+      </button>
+    </div>
+    <table
+      class="text-sm text-left text-gray-500 dark:text-gray-400 border-separate border-spacing-x-0.5 border-spacing-y-1"
+    >
+      <thead>
+        <tr>
+          <th
+            scope="col"
+          >
+            Task
+          </th>
+          <th
+            class="hidden sm:table-cell"
+            scope="col"
+          >
+            Created
+          </th>
+          <th
+            class="hidden sm:table-cell"
+            scope="col"
+          >
+            Status
+          </th>
+          <th
+            scope="col"
+          >
+            Action
+          </th>
+          <th
+            scope="col"
+          >
+            Delete
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        data-testid="feature-todo-tasks-table-rows"
+      />
+    </table>
+  </div>
+</div>
+`;
