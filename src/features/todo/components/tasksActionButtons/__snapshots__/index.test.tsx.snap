@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TasksActionButtons > should render successfully 1`] = `
+<div>
+  <div
+    class="flex gap-1 sm:justify-end justify-start items-center"
+  >
+    <button
+      class="btn btn-rounded btn-primary"
+    >
+      Complete All Tasks
+    </button>
+    <button
+      class="btn btn-rounded btn-danger"
+    >
+      Delete Completed Tasks
+    </button>
+  </div>
+</div>
+`;
