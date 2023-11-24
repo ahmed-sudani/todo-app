@@ -7,6 +7,8 @@ export default {
 
   plugins: [preact()],
 
+  base: '/todo-app/',
+
   test: {
     coverage: {
       reporter: ['text-summary', 'text'],
