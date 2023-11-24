@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Input > should render successfully 1`] = `
+<div>
+  <input
+    class="input"
+    type="text"
+  />
+</div>
+`;
