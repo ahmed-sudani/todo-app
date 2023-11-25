@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"yarn tw:watch\" \"vite\"",
     "build": "tw:build & vite build",
     "preview": "vite preview",
     "test": "vitest run",
