@@ -14,7 +14,7 @@ exports[`TaskFilter > should render successfully 1`] = `
       >
         <img
           class="w-4 h-4 text-gray-500 dark:text-gray-400"
-          src="/icons/search.svg"
+          src="./icons/search.svg"
         />
       </label>
       <input
