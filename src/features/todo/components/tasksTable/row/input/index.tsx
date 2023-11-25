@@ -20,7 +20,7 @@ export default function TaskEditInput({ task }: { task: Pick<TaskType, 'id' | 't
       className: 'cursor-pointer',
       'data-testid': `feature-todo-tasks-table-row-edit-input-${task.text}-icon`,
       onClick: handelOnEditIconClick,
-      src: '/icons/edit.svg',
+      src: './icons/edit.svg',
     },
     input: {
       className: 'disabled:border-none disabled:bg-inherit w-full',

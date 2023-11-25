@@ -7,7 +7,7 @@ export default function SearchInput({ searchText }: { searchText: Signal<string>
   const setSearchText = signalSetter(searchText)
   const onInput: JSXInternal.GenericEventHandler<HTMLInputElement> = (event) => setSearchText(event.currentTarget.value)
   const inputProps = {
-    img: { src: '/icons/search.svg' },
+    img: { src: './icons/search.svg' },
     input: {
       'data-testid': 'feature-todo-filter-tasks-input',
       id: 'search',
