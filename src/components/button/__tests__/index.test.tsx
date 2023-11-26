@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import Button from '.'
+import Button from '..'
 import { render } from '@testing-library/preact'
 
 describe('Button', () => {
