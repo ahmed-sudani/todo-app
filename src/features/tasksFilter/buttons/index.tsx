@@ -1,8 +1,8 @@
 import { ALL_TASKS_COUNT_LABEL, COMPLETED_COUNT_LABEL, UNCOMPLETED_COUNT_LABEL } from '../../../signals/filter'
-import Button from '../../../../../core/components/button'
+import Button from '../../../components/button'
 import { Signal } from '@preact/signals'
 import { TASKS_TO_SHOW } from '../../../types/task'
-import { signalSetter } from '../../../../../core/util/signalSetter'
+import { signalSetter } from '../../../util/signalSetter'
 
 export default function FilterButtons({ tasksToShow }: { tasksToShow: Signal<TASKS_TO_SHOW> }) {
   const setTasksToShow = signalSetter(tasksToShow)

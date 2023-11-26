@@ -1,7 +1,7 @@
-import InputWithSvg from '../../../../../core/components/input/input.with.svg'
+import InputWithSvg from '../../../components/input/input.with.svg'
 import { JSXInternal } from 'preact/src/jsx'
 import { Signal } from '@preact/signals'
-import { signalSetter } from '../../../../../core/util/signalSetter'
+import { signalSetter } from '../../../util/signalSetter'
 
 export default function SearchInput({ searchText }: { searchText: Signal<string> }) {
   const setSearchText = signalSetter(searchText)

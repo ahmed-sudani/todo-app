@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it } from 'vitest'
 import { cleanup, createEvent, fireEvent, render } from '@testing-library/preact'
-import TaskFilter from '.'
+import TaskFilter from '..'
 
 beforeEach(cleanup)
 

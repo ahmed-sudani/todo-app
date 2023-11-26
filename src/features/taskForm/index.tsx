@@ -1,5 +1,5 @@
-import Button from '../../../../core/components/button'
-import Input from '../../../../core/components/input'
+import Button from '../../components/button'
+import Input from '../../components/input'
 import { JSXInternal } from 'preact/src/jsx'
 import { createTask } from '../../util/tasks'
 import { useRef } from 'preact/hooks'

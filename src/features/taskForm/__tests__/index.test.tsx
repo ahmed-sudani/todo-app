@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it } from 'vitest'
 import { cleanup, fireEvent, render } from '@testing-library/preact'
-import TaskForm from '.'
+import TaskForm from '..'
 
 afterEach(cleanup)
 

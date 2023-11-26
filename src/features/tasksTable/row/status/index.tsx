@@ -1,5 +1,5 @@
 import { TaskType } from '../../../../types/task'
-import timeSince from '../../../../../../core/util/timeSince'
+import timeSince from '../../../../util/timeSince'
 
 export default function TaskStatus({ task }: { task: Pick<TaskType, 'completed' | 'completedDate'> }) {
   if (!task.completed) return <div className="task-status task-status-uncompleted mx-auto" />

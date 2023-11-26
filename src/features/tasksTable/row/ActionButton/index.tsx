@@ -1,4 +1,4 @@
-import Button from '../../../../../../core/components/button'
+import Button from '../../../../components/button'
 import { TaskType } from '../../../../types/task'
 import { updateTask } from '../../../../util/tasks'
 

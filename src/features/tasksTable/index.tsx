@@ -1,6 +1,6 @@
 import TasksTableBody from './body'
 import TasksTableHeader from './header'
-import { filteredTasks } from '../../signals/tasks'
+import { filteredTasks } from '../../signals/filter'
 
 export default function TasksTable() {
   return (

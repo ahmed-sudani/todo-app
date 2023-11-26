@@ -1,10 +1,10 @@
 import ActionButton from './ActionButton'
-import Button from '../../../../../core/components/button'
+import Button from '../../../components/button'
 import TaskEditInput from './input'
 import TaskStatus from './status'
 import { TaskType } from '../../../types/task'
 import { deleteTaskById } from '../../../util/tasks'
-import timeSince from '../../../../../core/util/timeSince'
+import timeSince from '../../../util/timeSince'
 
 export default function TaskRow({ task }: { task: TaskType }) {
   const onTaskDelete = () => {

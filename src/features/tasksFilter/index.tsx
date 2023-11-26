@@ -1,5 +1,6 @@
 import FilterButtons from './buttons'
 import SearchInput from './searchInput'
+
 import useFilterTasks from '../../hooks/filter'
 
 export default function TaskFilter() {

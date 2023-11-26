@@ -1,5 +1,5 @@
 import { useRef, useState } from 'preact/hooks'
-import InputWithSvg from '../../../../../../core/components/input/input.with.svg'
+import InputWithSvg from '../../../../components/input/input.with.svg'
 import { TaskType } from '../../../../types/task'
 import { updateTask } from '../../../../util/tasks'
 
