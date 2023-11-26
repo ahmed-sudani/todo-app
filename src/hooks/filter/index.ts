@@ -1,7 +1,8 @@
-import { completedTasks, filteredTasks, tasks, uncompletedTasks } from '../../signals/tasks'
+import { completedTasks, tasks, uncompletedTasks } from '../../signals/tasks'
 import { effect, signal } from '@preact/signals'
 import { TASKS_TO_SHOW } from '../../types/task'
 import { filterTasksByText } from '../../util/tasks'
+import { filteredTasks } from '../../signals/filter'
 
 export default function useFilterTasks() {
   const searchText = signal<string>('')

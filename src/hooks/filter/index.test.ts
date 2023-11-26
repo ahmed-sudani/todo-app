@@ -2,8 +2,8 @@ import { beforeEach, describe, expect, it } from 'vitest'
 import { cleanup, renderHook } from '@testing-library/preact'
 import { createTask, deleteAllTasks, updateTask } from '../../util/tasks'
 import { TASKS_TO_SHOW } from '../../types/task'
-import { filteredTasks } from '../../signals/tasks'
-import { signalSetter } from '../../../../core/util/signalSetter'
+import { filteredTasks } from '../../signals/filter'
+import { signalSetter } from '../../util/signalSetter'
 import useFilterTasks from '.'
 
 beforeEach(cleanup)
