@@ -1,8 +1,6 @@
 import preact from '@preact/preset-vite'
 
 export default {
-  base: '/todo-app/',
-
   define: {
     'import.meta.vitest': 'undefined',
   },
