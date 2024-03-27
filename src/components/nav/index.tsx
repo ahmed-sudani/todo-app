@@ -1,5 +1,5 @@
-import ToggleMode from '../toggleMode'
 import { Link } from 'react-router-dom'
+import ToggleMode from '../toggleMode'
 
 export default function Nav() {
   return (
@@ -7,7 +7,7 @@ export default function Nav() {
       <Link to="/">
         <div className="flex items-center gap-2">
           <img className="w-10 dark:invert" src="./icons/edit.svg" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white cursor-default cursor-pointer">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white cursor-pointer">
             Todo
           </span>
         </div>

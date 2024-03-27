@@ -1,5 +1,18 @@
 import './styles/index.css'
-import TodoPage from './pages'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import Home from './pages'
+import TodoPage from './pages/todo'
 import { render } from 'preact'
 
-render(<TodoPage />, document.getElementById('app')!)
+const router = createBrowserRouter([
+  {
+    element: <Home />,
+    path: '/',
+  },
+  {
+    element: <TodoPage />,
+    path: '/todo',
+  },
+])
+
+render(<RouterProvider router={router} />, document.getElementById('app')!)
