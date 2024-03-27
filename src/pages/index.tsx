@@ -7,7 +7,7 @@ export default function TodoPage() {
     <div class="h-screen flex flex-col">
       <Nav />
       <div className="flex flex-col flex-grow justify-between mt-5">
-        <div className="flex gap-5 p-5 max-xl:flex-wrap justify-between items-center xl:px-40 px-10">
+        <div className="flex gap-5 p-5 max-xl:flex-wrap justify-between mt-auto items-center xl:px-40 px-10">
           <div className="flex flex-col gap-2 items-start xl:basis-1/2">
             <h1 className="text-4xl font-bold dark:text-white">Welcome to Todo - Your Ultimate Task Manager</h1>
             <p className="dark:text-white">
