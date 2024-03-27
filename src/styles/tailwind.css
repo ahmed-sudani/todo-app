@@ -41,6 +41,19 @@
     background-color: theme('colors.green.200');
   }
 
+  .dark .btn-secondary:hover {
+    color: theme('colors.black');
+  }
+
+  .dark .btn-secondary {
+    color: theme('colors.white');
+    border-color: theme('colors.gray.950');
+  }
+
+  .dark .active {
+    color: theme('colors.black');
+  }
+
   .btn-yellow {
     background-color: theme('colors.yellow.200');
     color: theme('colors.black');
@@ -81,6 +94,14 @@
     background-color: theme('colors.red.500');
   }
 
+  .bg-gray-950 {
+    background-color: theme('colors.gray.950');
+  }
+
+  .bg-gray-1000 {
+    background-color: theme('colors.gray.1000');
+  }
+
   @screen sm {
     .btn {
       padding: theme('padding.2') theme('padding.4');
@@ -102,10 +123,19 @@
     text-align: center;
   }
 
+  .dark thead {
+    background-color: theme('colors.gray.950');
+    color: theme('colors.white');
+  }
+
   td {
     font-size: theme('fontSize.xs');
     padding: theme('padding.2');
     text-align: center;
+  }
+
+  .dark td {
+    color: theme('colors.white');
   }
 
   th {
@@ -115,6 +145,10 @@
 
   tr:hover {
     background-color: theme('colors.gray.50');
+  }
+
+  .dark tr:hover {
+    background-color: theme('colors.gray.950');
   }
 
   @screen sm {
@@ -130,4 +164,10 @@
       font-size: theme('fontSize.sm');
     }
   }
+}
+
+.dark #app {
+  height: 100vh;
+  overflow: auto;
+  background-color: theme('colors.gray.950');
 }

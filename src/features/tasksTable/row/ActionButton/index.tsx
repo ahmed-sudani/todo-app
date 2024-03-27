@@ -19,7 +19,7 @@ export default function ActionButton({ task }: { task: Pick<TaskType, 'completed
     return (
       <Button
         text="incomplete"
-        className={['btn-secondary', 'btn-yellow']}
+        className="btn-yellow"
         onClick={onUnDoneClick}
         data-testid={`feature-todo-tasks-table-row-btn-incomplete-${task.text}`}
       />

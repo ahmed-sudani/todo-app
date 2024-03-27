@@ -17,7 +17,7 @@ export default function TaskEditInput({ task }: { task: Pick<TaskType, 'id' | 't
 
   const inputProps = {
     img: {
-      className: 'cursor-pointer',
+      className: 'cursor-pointer dark:invert',
       'data-testid': `feature-todo-tasks-table-row-edit-input-${task.text}-icon`,
       onClick: handelOnEditIconClick,
       src: './icons/edit.svg',
